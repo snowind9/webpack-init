@@ -4,7 +4,7 @@ const webpack = require('webpack'); //to access built-in plugins
 
 module.exports = {
   mode: 'development',
-  entry: './src/index.js',
+  entry: './index.js',
   output: {
     filename: 'bundle.[hash].js',
     path: path.resolve(__dirname, 'dist')
