@@ -1,10 +1,17 @@
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const webpack = require('webpack'); //to access built-in plugins
+const chalk = require('chalk');
 
 module.exports = {
   mode: 'development',
-  entry: './src/index.js',
+  entry: [
+    'babel-polyfill',
+
+    // This is an alternative client for WebpackDevServer that shows a syntax error overlay.
+    require.resolve('react-dev-utils/webpackHotDevClient'),
+    './src/index.js',
+  ],
   output: {
     filename: 'bundle.[hash].js',
     path: path.resolve(__dirname, 'dist')

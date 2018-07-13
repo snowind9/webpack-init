@@ -8,7 +8,9 @@
     "url": "git+https://github.com/snowind9/webpack-init.git"
   },
   "dependencies": {
+    "babel-polyfill": "^6.26.0",
     "react": "^16.3.1",
+    "react-dev-utils": "^5.0.1",
     "react-dom": "^16.4.1",
     "react-redux": "^5.0.7",
     "redux": "^4.0.0",
@@ -20,6 +22,7 @@
     "babel-plugin-transform-object-rest-spread": "^6.26.0",
     "babel-preset-env": "^1.7.0",
     "babel-preset-react": "^6.24.1",
+    "compression-webpack-plugin": "^1.1.11",
     "html-webpack-plugin": "^3.2.0",
     "uglifyjs-webpack-plugin": "^1.2.7",
     "webpack": "^4.5.0",
