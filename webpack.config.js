@@ -4,13 +4,17 @@ const webpack = require('webpack'); //to access built-in plugins
 
 module.exports = {
   mode: 'development',
-  entry: './index.js',
+  entry: './src/index.js',
   output: {
     filename: 'bundle.[hash].js',
     path: path.resolve(__dirname, 'dist')
   },
   devtool: 'source-map',
-  plugins: [new HtmlWebpackPlugin()],
+  plugins: [new HtmlWebpackPlugin({
+      inject: true,
+      template: "./index.html",
+    })
+  ],
   module: {
     rules:[
       {
@@ -24,7 +28,10 @@ module.exports = {
       {
         test: /\.js$/,
         exclude: /(node_modules)/,
-        loader: 'babel-loader'
+        loader: 'babel-loader',
+        options: {
+          compact: true,
+        }
       },
     ]
   }
