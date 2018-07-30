@@ -6,7 +6,7 @@ const chalk = require('chalk');
 module.exports = {
   mode: 'development',
   entry: [
-    'babel-polyfill',
+    require.resolve('./pre-loader'),
 
     // This is an alternative client for WebpackDevServer that shows a syntax error overlay.
     require.resolve('react-dev-utils/webpackHotDevClient'),
@@ -17,15 +17,16 @@ module.exports = {
     path: path.resolve(__dirname, 'dist')
   },
   devtool: 'source-map',
-  plugins: [new HtmlWebpackPlugin({
+  plugins: [
+    new HtmlWebpackPlugin({
       inject: true,
       template: "./index.html",
-    })
+    }),
   ],
   module: {
     rules:[
       {
-        test: /\.scss$/,
+        test: /\.(scss|css)$/,
         use: [
           {loader: "style-loader"},
           {loader: "css-loader"},
@@ -40,6 +41,15 @@ module.exports = {
           compact: true,
         }
       },
+      {
+        test: [/\.bmp$/, /\.gif$/, /\.jpe?g$/, /\.png$/],
+        loader: require.resolve('url-loader'),
+      },
     ]
+  },
+
+  devServer: {
+    host: '0.0.0.0',
+    port: 9999,
   }
 };

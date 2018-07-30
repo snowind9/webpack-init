@@ -6,6 +6,7 @@ import configureStore from './store/store';
 
 import App from './app';
 
+
 const store = configureStore();
 store.dispatch(getInitialNotes);
 
