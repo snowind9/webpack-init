@@ -30,7 +30,6 @@ class App extends React.Component {
     }
 
     render() {
-      console.log('render');
       let state = this.state.update? 'true': 'false';
       let detail = this.props.note.map((item,index) => <p key={index}>{item.title}</p>);
         return (
