@@ -25,10 +25,11 @@ class MySortableComponent extends React.Component {
     }
 
     addItem() {
-      this.setState({ list: ["added item",...this.state.list, ] });
+      // this.setState({ list: ["added item",...this.state.list, ] });
     }
 
     render() {
+      console.log("render");
         return (
             <div>
                 <button type="button"
