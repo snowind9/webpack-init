@@ -77,12 +77,12 @@ class Sortable extends React.Component {
   // jQuery UI sortable expects a <ul> list with <li>s.
   renderItems() {
     return this.props.data.map((item, i) => <li key={item.id} className="ui-state-default" onClick={e => this.state.onClick(item.item)}>
-      <span className="ui-icon ui-icon-arrowthick-2-n-s"></span>
+      <span className=''></span>
       {item.item}
     </li>);
   }
   render() {
-    return (<ul ref="sortable">
+    return (<ul className="" ref="sortable">
       {this.renderItems()}
     </ul>);
   }

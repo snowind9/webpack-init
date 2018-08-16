@@ -13,7 +13,6 @@ class InputPage extends React.Component {
       this.props.onSubmit(e);
     }
 
-
     render() {
       return (
         <div>
