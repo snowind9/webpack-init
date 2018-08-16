@@ -1,0 +1,87 @@
+.input {
+  .input-prepend {
+    display: inline-block;
+    font-size: 0;
+    margin: 10px 5px 0 0;
+    margin-bottom: 0;
+    vertical-align: middle;
+    white-space: nowrap;
+  }
+  .add-on{
+    display: inline-block;
+    width: 2em;
+    height: 20px;
+    min-width: 16px;
+    padding: 4px 5px;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    text-align: center;
+    text-shadow: 0 1px 0 #fff;
+    background-color: #eee;
+    border: 1px solid #ccc;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    white-space: nowrap;
+    border-radius: 4px 0 0 4px;
+  }
+  input {
+    white-space: nowrap;
+
+    display: inline-block;
+    color: #555;
+    position: relative;
+
+    font: 400 11px system-ui;
+    font-weight: 400;
+    font-size: 14px;
+
+    vertical-align: middle;
+    vertical-align: top;
+
+    margin: 0;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-left: 0;
+
+    border: 1px solid #ccc;
+    border-radius: 0 4px 4px 0;
+
+    height: 20px;
+    width: 210px;
+
+    padding: 4px 6px;
+    line-height: 20px;
+
+    cursor: pointer;
+    transition: border linear .2s,box-shadow linear .2s;
+
+    letter-spacing: normal;
+    word-spacing: normal;
+
+    text-rendering: auto;
+    text-transform: none;
+    text-indent: 0px;
+    text-shadow: none;
+    text-align: start;
+
+    -webkit-appearance: textfield;
+    -webkit-rtl-ordering: logical;
+    -webkit-writing-mode: horizontal-tb !important;
+  }
+}
+
+.AbsoluteWindow {
+  background-color: transparent;
+  color: #555;
+  position:  fixed;
+  z-index: 1005;
+  left: -1px;
+  top: 74px;
+  border: 0px;
+  padding: 0px;
+  margin: 0px;
+  opacity: 0.7;
+  display: block;
+
+}

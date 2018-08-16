@@ -7,6 +7,7 @@ import configureStore from './store/store';
 import App from './App';
 
 import PureCssApp from './genericUI/PureCssApp';
+import Index from './genericUI/Index';
 import {Display, WhenTruthy, WhenFalsy} from './study/DisplayChildren';
 
 const store = configureStore();

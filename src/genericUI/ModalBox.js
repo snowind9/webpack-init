@@ -11,9 +11,10 @@ class ModalBox extends React.Component {
     }
   }
 
-  show() {
+  toggle(children) {
     this.setState({
-      open: true,
+      open: !this.state.open,
+      children: children,
     })
   }
 
@@ -31,7 +32,7 @@ class ModalBox extends React.Component {
             <CSSTransition in={state === 'entered'} timeout={300} classNames="content" unmountOnExit>
                 <div className={`modal__inner`} >
                   <label className="modal__close" onClick={e => this.setState({open: false})}></label>
-                   {this.props.children}
+                   {this.state.children}
                 </div>
             </CSSTransition>
           </div>
