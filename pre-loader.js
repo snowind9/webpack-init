@@ -1,4 +1,5 @@
 import 'babel-polyfill';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 window.$ = window.jQuery = require('jquery')
 

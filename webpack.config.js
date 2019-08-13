@@ -10,7 +10,7 @@ module.exports = {
 
     // This is an alternative client for WebpackDevServer that shows a syntax error overlay.
     require.resolve('react-dev-utils/webpackHotDevClient'),
-    './src/index.js',
+    './src/eamspoc/index.js',
   ],
   output: {
     filename: 'bundle.[hash].js',

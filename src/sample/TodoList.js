@@ -4,7 +4,7 @@ import ReactDOM from 'react-dom';
 import {CSSTransition, TransitionGroup} from 'react-transition-group';
 import uuid from 'uuid';
 
-import {Grid, ListGroup, ListGroupItem, Button} from 'react-bootstrap';
+import {Grid, ListGroup, ListGroupItem, Button} from 'reactstrap';
 
 import './todoList.scss';
 

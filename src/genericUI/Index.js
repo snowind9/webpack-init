@@ -1,7 +1,8 @@
 import React from 'react';
 import Input from './InputComponent'
 
-import AbsoluteWindow from './AbsoluteWindow'
+import AbsoluteWindow from './AbsoluteWindow';
+import TimeoutAlert from './TimeoutAlert';
 
 class Index extends React.Component {
   constructor(props) {
@@ -12,14 +13,17 @@ class Index extends React.Component {
   }
 
   render() {
-    return ([
-      <AbsoluteWindow key="1">
-        {`${this.state.value}`}<br/>
-      </AbsoluteWindow>,
-      <button key="2" onClick={e => this.setState({
-          value: !this.state.value
-        })}>update</button>,
-    ]);
+    return (
+      // [
+      // <AbsoluteWindow key="1">
+      //   {`${this.state.value}`}<br/>
+      // </AbsoluteWindow>,
+      // <button key="2" onClick={e => this.setState({
+      //     value: !this.state.value
+      //   })}>update</button>,
+      <TimeoutAlert />
+      // ]
+  );
   }
 }
 

@@ -7,7 +7,7 @@ import {
   ControlLabel,
   FormControl,
   HelpBlock,
-} from 'react-bootstrap';
+} from 'reactstrap';
 import { CSSTransition } from 'react-transition-group';
 
 import './CSSTransitionExample.scss';

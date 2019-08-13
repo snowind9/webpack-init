@@ -55,8 +55,6 @@ class MySortableComponent extends React.Component {
   addItem(e) {
     e.preventDefault();
     this.props.onClick(<InputPage onSubmit={this.onSubmit} />);
-
-
   }
 
   onSubmit(value) {
