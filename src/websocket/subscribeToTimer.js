@@ -1,6 +1,5 @@
 import io from 'socket.io-client';
 
-// const socket = io('https://express.npapps.paas.bip.jp.fid-intl.com/my-namespace');
 const socket = io('http://localhost:8081/my-namespace');
 
 // function subscribeToTimer(cb) {
